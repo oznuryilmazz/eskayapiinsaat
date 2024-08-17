@@ -1,0 +1,37 @@
+
+.sticky-button {
+  position: fixed;
+  background-color: #25d366;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.sticky-button svg {
+  margin: auto;
+  fill: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.sticky-button a,
+.sticky-button label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+

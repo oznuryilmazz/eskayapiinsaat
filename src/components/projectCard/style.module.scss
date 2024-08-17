@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    padding-inline: 56px;
+    padding-block: 24px;
+    background-color: #1b1b1b;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    gap: 56px;
+    z-index: 2;
+    border: none;
+
+    .contentBox {
+      .title {
+        font-size: 15px;
+        line-height: 1.75em;
+        color: #bf9b43;
+        font-weight: 600;
+      }
+
+      .button {
+        font-size: 15px;
+        line-height: 1.75em;
+        color: #999;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    padding-inline: 16px !important;
+    padding-block: 8px !important;
+    gap: 16px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+
+    .contentBox {
+      .title {
+        font-size: 12px !important;
+      }
+
+      .button {
+        font-size: 12px !important;
+      }
+    }
+  }
+}

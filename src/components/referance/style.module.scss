@@ -1,0 +1,69 @@
+.container {
+  .referenceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1d1e20;
+    margin: 0 auto;
+    gap: 50px;
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .referance {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      gap: 20px; // Add gap between grid items for better spacing
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 550px;
+        text-align: center;
+        border-right: thin solid rgb(209 209 209 / 30%);
+        padding-inline: 40px;
+
+        p {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          color: rgba(21, 21, 21, 0.7);
+        }
+      }
+
+      .col:last-child {
+        border-right: 0px solid #1d1e20;
+      }
+
+      .counter {
+        animation-duration: 1s;
+        animation-delay: 0s;
+      }
+
+      i {
+        font-size: 20px !important;
+      }
+
+      @media (max-width: 991px) {
+        .col {
+          border-right: 0px solid rgba(255, 255, 255, 0.3);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          width: 100%;
+          padding-block: 20px;
+        }
+
+        .col:last-child {
+          border-bottom: 0px solid rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .referance {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

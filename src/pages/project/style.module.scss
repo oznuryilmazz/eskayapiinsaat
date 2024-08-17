@@ -1,0 +1,139 @@
+.container {
+  margin: 150px auto;
+  padding-inline: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-position: center center;
+  background-size: cover;
+
+  h2 {
+    color: #ffffff;
+    font-size: 30px;
+  }
+}
+
+.projectContainer {
+  padding-inline: 56px;
+  color: #1d1e20;
+
+  .project img {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .project {
+    .subtitle {
+      font-size: 15px;
+      line-height: 1.75em;
+      margin: 0 0 20px;
+      color: #999;
+      font-weight: 400;
+      margin-block:40px;
+    }
+  }
+
+  .contentText {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 1.75em;
+    color: #999;
+    font-weight: 400;
+  }
+
+  .contentText ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .otherProject {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      font-size: 25px;
+      line-height: 1.75em;
+      color: #999;
+      font-weight: 700;
+
+      span {
+        color: #bf9b43;
+      }
+    }
+
+    .otherProjectBoxContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 48px;
+      margin-bottom: 40px;
+
+      .otherProjectBox a {
+        text-decoration: none;
+      }
+
+      .otherProjectBox {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .otherProjectBox img {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease;
+        transform-origin: center center;
+      }
+
+      .otherProjectBox:hover img {
+        transform: scale(1.1);
+      }
+
+      .projectHover {
+        display: none;
+        position: relative;
+        bottom: 120px;
+        list-style: none;
+        padding: 0;
+        background-color: #0d0d0d;
+        color: antiquewhite;
+        padding: 10px;
+        width: 0;
+        overflow: hidden;
+        transition: width 1.5s ease;
+      }
+
+      .otherProjectBox:hover .projectHover {
+        display: block;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 50px auto !important;
+    padding-inline: 24px !important;
+  }
+
+  .projectContainer {
+    padding-inline: 8px !important;
+  }
+
+  .otherProjectBoxContainer {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 16px !important;
+  }
+}

@@ -1,0 +1,252 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.container {
+  background-image: url("../../../public/img/projects/eskayapi-bg.png");
+  background-size: cover;
+  background-position: 0% 30%;
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1d1e20;
+    margin: 0 auto;
+    gap: 50px;
+    animation: fadeInUp 1s ease-in-out;
+
+    h2 {
+      font-size: 40px;
+      animation: slideInUp 1s ease-in-out;
+    }
+
+    .aboutMeContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-inline: 60px;
+      animation: slideInLeft 1s ease-in-out;
+
+      .textContainer {
+        display: flex;
+        flex-direction: column;
+        width: 44%;
+        gap: 40px;
+
+        .title {
+          font-size: 18px;
+          font-weight: 600;
+          animation: slideInLeft 1s ease-in-out;
+        }
+
+        .text {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          animation: slideInLeft 1s ease-in-out;
+        }
+      }
+
+      img {
+        animation: slideInRight 1s ease-in-out;
+      }
+
+      .specialContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .title {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .iconDiv {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+
+          .littleTitle {
+            font-size: 12px;
+            font-weight: 400;
+            opacity: 0.7;
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .referance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: slideInLeft 1s ease-in-out;
+    margin-top: 16px;
+
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      border-right: thin solid rgb(209 209 209 / 30%);
+      padding-inline: 60px;
+      animation: slideInUp 1s ease-in-out;
+
+      .colRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+          font-size: 60px;
+          color: #dedede;
+        }
+      }
+
+      p {
+        color: rgba(21, 21, 21, 0.7);
+      }
+    }
+
+    .col:last-child {
+      border-right: 0px solid #1d1e20;
+    }
+
+    .counter {
+      animation-duration: 1s;
+      animation-delay: 0s;
+    }
+
+    i {
+      font-size: 20px !important;
+    }
+
+    @media (max-width: 991px) {
+      .col {
+        border-right: 0px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        width: 100%;
+        padding-block: 20px;
+      }
+
+      .col:last-child {
+        border-bottom: 0px solid rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .aboutContainer {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      .aboutMeContainer {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding-inline: 5% !important;
+        gap: 50px !important;
+
+        .textContainer {
+          width: 90% !important;
+        }
+
+        .specialContainer {
+          align-items: center !important;
+          justify-content: center !important;
+          text-align: center !important;
+
+          .iconDiv {
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .referance {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      gap: 50px !important;
+
+      .col {
+        padding-inline: 20px;
+      }
+    }
+  }
+}

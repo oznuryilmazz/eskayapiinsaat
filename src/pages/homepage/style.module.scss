@@ -1,0 +1,18 @@
+.container {
+  margin: 150px auto;
+  padding-inline: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 50px auto !important;
+    padding-inline: 24px !important;
+  }
+}

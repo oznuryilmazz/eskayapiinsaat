@@ -1,0 +1,26 @@
+.container {
+  margin: 150px auto;
+  padding-inline: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+
+  h2 {
+    color: #ffffff;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 50px auto !important;
+    padding-inline: 24px !important;
+  }
+}
