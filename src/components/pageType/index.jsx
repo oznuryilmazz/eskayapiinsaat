@@ -7,7 +7,7 @@ const PageType = ({ pageType, section1, section2, bg }) => {
       <div
         className={style.header}
         style={{
-          background: `url(${bg})`,
+          backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
           backgroundPosition: "50%",
         }}
