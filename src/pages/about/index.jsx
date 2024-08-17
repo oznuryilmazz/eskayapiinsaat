@@ -8,7 +8,7 @@ const AboutUs = () => {
       pageType="HAKKIMIZDA"
       section1={<AboutMe />}
       section2={<Referance />}
-      bg="../../../public/img/aaa.jpg"
+      bg="./img/aaa.jpg"
     />
   );
 };
