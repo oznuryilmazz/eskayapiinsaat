@@ -8,7 +8,7 @@ const ContactUs = () => {
       pageType="İLETİŞİME GEÇ"
       section1={<Contact />}
       section2={<Referance />}
-      bg="../../../public/img/aaa.jpg"
+      bg="./img/aaa.jpg"
     />
   );
 };
